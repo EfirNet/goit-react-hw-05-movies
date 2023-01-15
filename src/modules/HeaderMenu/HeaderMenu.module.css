@@ -1,0 +1,39 @@
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  /* border-bottom: 1px solid gray; */
+}
+
+.wrap {
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.244);
+}
+
+.list {
+  display: flex;
+  margin: 0;
+  list-style: none;
+  background-color: gray;
+}
+
+.link {
+  display: flex;
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  outline: 1px solid white;
+  text-transform: uppercase;
+}
+
+.linkActive {
+  composes: link;
+  color: white;
+  background-color: tomato;
+}
+
+.link:hover {
+  color: white;
+  text-decoration: underline;
+}
