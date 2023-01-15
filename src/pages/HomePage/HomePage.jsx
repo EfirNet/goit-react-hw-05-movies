@@ -1,5 +1,5 @@
 import styles from './HomePage.module.css';
-import TrendingMovies from '../../components/TrandingMovies/TrandingMovies';
+import TrendingMovies from '../../components/TrandingMovies';
 
 const HomePage = () => {
   return (

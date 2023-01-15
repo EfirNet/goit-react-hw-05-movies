@@ -4,6 +4,7 @@ import { Link, Outlet, useLocation } from 'react-router-dom';
 import { getMovieById } from '../../shared/api/api';
 import MovieDetails from '../../components/MovieDetails';
 import styles from './MovieDetailsPage.module.css';
+import NotFoundPage from '../NotFoundPage';
 
 const MovieDetailsPage = () => {
   const [state, setState] = useState({
@@ -51,7 +52,7 @@ const MovieDetailsPage = () => {
   return (
     <div className={styles.wrap}>
       {loading && <p className={styles.text}>...Loading</p>}
-      {error && <p className={styles.text}>Movie not found</p>}
+      {error && <NotFoundPage />}
       {isMovie && (
         <button className={styles.button} onClick={goBack}>
           Go Back
